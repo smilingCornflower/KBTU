@@ -16,3 +16,5 @@ def div(x, y):
 
 print(mult(start, end))
 print(div(start, end))
+
+print('The end of the script')
