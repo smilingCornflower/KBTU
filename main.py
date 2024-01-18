@@ -15,3 +15,4 @@ def div(x, y):
     return x / y
 
 print(mult(start, end))
+print(div(start, end))
