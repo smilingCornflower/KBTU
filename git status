@@ -1,0 +1,48 @@
+[33mcommit 9cbf132e138997c343997ae49e0a0b6959f783e1[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Fri Jan 19 13:24:52 2024 +0600
+
+    TSIS1 and examples from 0 to 20
+
+[33mcommit a80781beccf9d089a5d366c64bfab8620985107f[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 20:04:00 2024 +0600
+
+    Print the end
+
+[33mcommit 864c682186f3e46aff10b219418c012853bf828e[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 20:03:29 2024 +0600
+
+    Print mult and div
+
+[33mcommit 99c16695940a4f75b0bc21c070ed719d0165ee38[m
+Merge: e1c29f8 9119153
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 20:02:17 2024 +0600
+
+    Merge branch 'Lab1'
+
+[33mcommit e1c29f8562343728f77010b66899ab55b9d0976a[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 19:55:10 2024 +0600
+
+    Added a function div
+
+[33mcommit 911915319ef00d46d5a4bd2eb6d745283bec1d5b[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 19:53:58 2024 +0600
+
+    Added a function mult
+
+[33mcommit 87eb8615a0e6d6798dae81aef1f1185804893373[m[33m ([m[1;31morigin/Lab1[m[33m)[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 19:17:02 2024 +0600
+
+    fixed the name of the variable (start)
+
+[33mcommit d0d7af10c040c50aa34947a473b1cc60330c83a9[m
+Author: Turganbayev Nauryzbek <smiling.cornflower@gmail.com>
+Date:   Thu Jan 18 19:11:32 2024 +0600
+
+    First commit
