@@ -1,3 +1,6 @@
 x = ("apple", "banana", "cherry")
 print(type(x))
-tuple
+dct = ([1, 2, 3], 4)
+
+
+print(dct)

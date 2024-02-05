@@ -1,6 +1,6 @@
-def greeting(name):
-    print(f"Hello {name}! How are you?")
+def my_function(fname):
+  print(fname + " Refsnes")
 
-my_friend = 'Chris'
-
-greeting(my_friend)
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")

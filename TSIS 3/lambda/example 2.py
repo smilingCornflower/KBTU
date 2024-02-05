@@ -1,3 +1,2 @@
-add = lambda a, b: a + b
-result = add(3, 7)
-print(result)
+x = lambda a, b : a * b
+print(x(5, 6))

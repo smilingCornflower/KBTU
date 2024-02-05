@@ -1,3 +1,2 @@
-square = lambda x: x ** 2
-result = square(5)
-print(result)
+x = lambda a : a + 10
+print(x(5))
