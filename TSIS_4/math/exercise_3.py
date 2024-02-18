@@ -8,7 +8,7 @@ from math import tan, pi
 def get_polygon_area(sides_amount, side_length):
     perimeter = sides_amount * side_length
     apothem = side_length / (2 * tan(pi / sides_amount))
-    return round(perimeter * apothem / 2, 3)
+    return round(perimeter * apothem / 2, 2)
 
 
 print(get_polygon_area(4, 25))

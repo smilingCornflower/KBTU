@@ -5,10 +5,10 @@ from math import pi
 # Output radian: 0.261904
 
 def convert_deg_to_rad(degrees):
-    return degrees * (pi / 180)
+    return round(degrees * (pi / 180), 6)
 
 
-angle1, angle2, angle3 = 30, 45, 60
+angle1, angle2, angle3 = 15, 45, 60
 
 print(f"{angle1} degrees in radians: {convert_deg_to_rad(angle1)}")
 print(f"{angle2} degrees in radians: {convert_deg_to_rad(angle2)}")
