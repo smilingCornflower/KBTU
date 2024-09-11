@@ -1,0 +1,3 @@
+ALTER TABLE users
+ALTER COLUMN isadmin TYPE BOOLEAN
+USING CASE WHEN isadmin > 0 THEN true ELSE false END;
