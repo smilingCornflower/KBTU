@@ -4,30 +4,33 @@
 using namespace std;
 
 int main(){
-    int n; cin >> n;
-    vector<int> v;
-    vector<int> ans;
+    int number;
+    cin >> number;
 
-    for (int i = 0; i < n; i++){
-        int x; cin >> x;
-        v.push_back(x);
+    vector<int> numbers;
+    vector<int> answer;
+
+    for (int i = 0; i < number; i++) {
+        int x;
+        cin >> x;
+        numbers.push_back(x);
     }
-
-    ans.push_back(-1);
-
-    for (int i = 1; i < n; i++){
-        for (int j = i - 1; j >= 0; j--){
-            if (v[i] >= v[j]){
-                ans.push_back(v[j]);
+    answer.push_back(-1);
+    
+    for (int i = 1; i < number; i++) {
+        for (int j = i - 1; j >= 0; j--) {
+            if (numbers[i] >= numbers[j]) {
+                answer.push_back(numbers[j]);
                 break;
             }
-            if(j==0){
-                ans.push_back(-1);
+            else if (j == 0) {
+                answer.push_back(-1);
             }
         }
     }
 
-    for (int i = 0; i < n; i++){
-        cout << ans[i] << " ";
+    for (int i = 0; i < number; i++) {
+        cout << answer[i] << " ";
     }
+    
 }
