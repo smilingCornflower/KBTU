@@ -1,5 +1,5 @@
 CREATE TABLE users (
-    id SERIAL;
+    id SERIAL,
     firstname VARCHAR(50),
     lastname VARCHAR(50)
 );
