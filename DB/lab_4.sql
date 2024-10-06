@@ -1,6 +1,6 @@
 -- 1
--- drop database if exists lab_4;
--- create database lab_4;
+drop database if exists lab_4;
+create database lab_4;
 
 -- 2
 drop table if exists warehouses cascade;
