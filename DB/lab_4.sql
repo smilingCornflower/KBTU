@@ -6,7 +6,8 @@ create database lab_4;
 drop table if exists warehouses cascade;
 create table warehouses
 (
-    code     serial primary key,
+    code     serial p
+        rimary key,
     location varchar(255),
     capacity int
 );
@@ -55,13 +56,18 @@ select distinct contents
 from boxes;
 
 -- 7
+select warehouse, contents, count(*) as boxes_count
+from boxes group by warehouse;
+                  --, contents;
+
+
 select warehouse, count(*) as boxes_count
 from boxes
 group by warehouse;
 
 -- 8
 select warehouse, count(*) as boxes_count
-from boxes
+from boxes where value > 150
 group by warehouse
 having count(*) > 2;
 
@@ -74,12 +80,13 @@ insert into boxes (code, contents, value, warehouse)
 values ('H5RT', 'Papers', 200, 2);
 
 -- 11
-update boxes
+update boxes a
 set value = value * 0.85
-where code = (select code
-              from boxes
-              order by value desc
+where code in (select b.code
+              from boxes b
+              where b.code = a.code              order by value desc
               offset 2 limit 1);
+
 
 -- 12
 delete

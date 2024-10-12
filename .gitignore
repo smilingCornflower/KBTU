@@ -1,4 +1,11 @@
 .DS_STORE
 .vscode
+
 *.json
+*.yaml
+*.yml
+
 test
+tempo.py
+venv/
+
