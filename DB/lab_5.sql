@@ -64,8 +64,7 @@ select sum(purch_amt) as total_purchases_amount
 from orders;
 
 --4  Select the average purchase amount of all orders.
-select avg(purch_amt)
-from orders;
+select sum(purch_amt) / count(*) from orders;
 
 --5 Select how many customer have listed their names.
 select count(cust_name)
@@ -79,18 +78,18 @@ from orders;
 -- 7 Select customer with all information whose name ends with the letter 'b'.
 select *
 from customers
-where cust_name like '%b';
+where cust_name like '%b%a%';
 
 -- 8 Select orders which made by customers from ‘New York’.
 select *
 from orders
 where customer_id in (select customer_id
                       from customers
-                      where city = 'New York')
+                      where city = 'New York');
 -- 8 Select orders which made by customers from ‘New York’.
 select o.*
-from orders o
-         join customers c
+from orders o--2
+         left join customers c--3
               on o.customer_id = c.customer_id;
 
 -- 9 Select customers with all information who has order with purchase amount more than 10.
@@ -98,7 +97,7 @@ select *
 from customers
 where customer_id in (select customer_id
                       from orders
-                      where purch_amt > 10)
+                      where purch_amt > 10);
 
 -- 10 Select total grade of all customers.
 select sum(grade) as total_grade
