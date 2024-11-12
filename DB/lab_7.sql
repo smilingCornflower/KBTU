@@ -77,3 +77,4 @@ create index d_budget_index on departments (budget);
 create index e_id_index on employees (department_id);
 create index e_salary_index on employees (salary);
 
+
